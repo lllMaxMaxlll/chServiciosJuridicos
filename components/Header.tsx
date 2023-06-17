@@ -53,7 +53,7 @@ export default function Header() {
 							<li>
 								<Link
 									href="/contact"
-									className="inline-block rounded border border-neutral-900 dark:border-neutral-100 bg-neutral-900 dark:bg-neutral-100 ms-3 px-5 py-2 text-sm font-medium text-neutral-200 dark:text-neutral-900 hover:bg-neutral-100 hover:text-neutral-900 dark:hover:bg-neutral-900 dark:hover:text-neutral-100 focus:outline-none focus:ring active:text-neutral-50 transition duration-300">
+									className="inline-block rounded border border-neutral-900 dark:border-neutral-100 bg-neutral-900 dark:bg-neutral-100 ms-3 px-5 py-2 text-sm font-medium text-neutral-200 dark:text-neutral-900 hover:bg-transparent hover:text-neutral-900 dark:hover:bg-transparent dark:hover:text-neutral-100 focus:outline-none focus:ring active:text-neutral-50 transition duration-300">
 									Contacto
 								</Link>
 							</li>

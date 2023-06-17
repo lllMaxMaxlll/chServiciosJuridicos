@@ -4,7 +4,7 @@ module.exports = {
 	darkMode: "class",
 	theme: {
 		extend: {
-			backgroundImage: {},
+			backgroundImage: { justice: "url('../public/justice.jpg')" },
 		},
 	},
 	plugins: [],

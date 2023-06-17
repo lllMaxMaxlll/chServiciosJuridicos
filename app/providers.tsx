@@ -1,13 +1,11 @@
 "use client";
-
-import { useEffect } from "react";
-import { ThemeProvider } from "next-themes";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Header } from "@/components";
+import { useEffect } from "react";
+import { ThemeProvider } from "next-themes";
 
-export default function DefaultLayout({ children }: { children: React.ReactNode }) {
+export function Providers({ children }: { children: React.ReactNode }) {
 	useEffect(() => {
 		AOS.init({
 			once: true,

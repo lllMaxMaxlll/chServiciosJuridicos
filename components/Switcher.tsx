@@ -1,21 +1,28 @@
 "use client";
 
 import { useTheme } from "next-themes";
+import { useState, useEffect } from "react";
 
 function Switcher() {
+	const [mounted, setMounted] = useState(false);
 	const { theme, setTheme } = useTheme();
 	const isLight = theme === "light" ? "dark" : "light";
+
+	useEffect(() => {
+		if (!mounted) setMounted(true);
+	}, []);
+
 	function switchTheme() {
 		setTheme(isLight);
 	}
 
-	if (!theme) return null;
+	if (!mounted) return null;
 
 	return (
 		<button
 			onClick={switchTheme}
 			title={`Switch to ${isLight} mode`}
-			className="relative ml-4 w-10 h-10 focus:outline-none focus:shadow-outline text-gray-500">
+			className="relative ml-4 w-10 h-10 focus:outline-none focus:shadow-outline dark:text-neutra-100">
 			{isLight === "light" ? (
 				<svg style={{ width: "24px", height: "24px" }} viewBox="0 0 24 24">
 					<path
@@ -33,8 +40,8 @@ function Switcher() {
 					strokeWidth="2"
 					stroke="currentColor"
 					fill="none"
-					stroke-linecap="round"
-					stroke-linejoin="round">
+					strokeLinecap="round"
+					strokeLinejoin="round">
 					<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
 					<circle cx="12" cy="12" r="4"></circle>
 					<path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path>
