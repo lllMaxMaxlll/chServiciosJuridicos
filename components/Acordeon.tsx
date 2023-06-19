@@ -33,7 +33,7 @@ function Acordeon() {
 		<>
 			{faqs.map((faq, i) => (
 				<details key={i} className="group [&_summary::-webkit-details-marker]:hidden">
-					<summary className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-neutral-50 p-4 text-neutral-900 dark:bg-neutral-800 dark:text-white">
+					<summary className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-neutral-200 p-4 text-neutral-900 dark:bg-neutral-800 dark:text-white">
 						<h2 className="font-medium">{faq.title}</h2>
 
 						<svg

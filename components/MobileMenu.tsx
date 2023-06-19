@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import { Transition } from "@headlessui/react";
+import { Link as ScrollLink } from "react-scroll";
 import Link from "next/link";
 import { Switcher } from "@/components";
 
@@ -17,10 +18,11 @@ export default function MobileMenu() {
 	const mobileNav = useRef<HTMLDivElement>(null);
 
 	const links: LinksMobileMenu[] = [
-		{ title: "Inicio", href: "/" },
-		{ title: "Quienes somos", href: "/about" },
-		{ title: "Servicios", href: "/services" },
-		{ title: "FAQ", href: "/faq" },
+		{ title: "Inicio", href: "hero" },
+		{ title: "Quienes somos", href: "about" },
+		{ title: "Servicios", href: "services" },
+		{ title: "FAQ", href: "faq" },
+		{ title: "Contacto", href: "/contact" },
 	];
 
 	// close the mobile menu on click outside
@@ -76,12 +78,17 @@ export default function MobileMenu() {
 					<ul className="px-5 py-2 flex justify-center items-center h-full flex-col">
 						{links.map((e, i) => (
 							<li key={i} className="py-3 text-2xl">
-								<Link
-									href={e.href}
+								<ScrollLink
+									activeClass="active"
+									to={e.href}
+									spy={true}
+									smooth={true}
+									offset={-70} // Ajusta el desplazamiento vertical
+									duration={700}
 									onClick={() => setMobileNavOpen(false)}
-									className="flex font-medium w-full text-neutral-900 hover:text-neutral-600 dark:text-neutral-100 dark:hover:text-neutral-200 justify-center">
+									className="flex cursor-pointer font-medium w-full text-neutral-900 hover:text-neutral-600 dark:text-neutral-100 dark:hover:text-neutral-200 justify-center">
 									{e.title}
-								</Link>
+								</ScrollLink>
 							</li>
 						))}
 					</ul>

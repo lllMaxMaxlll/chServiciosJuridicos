@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-
+import { Link as ScrollLink } from "react-scroll";
 import Link from "next/link";
 import { MobileMenu, Logo, Switcher } from "@/components";
 
@@ -13,10 +13,10 @@ type LinksHeader = {
 export default function Header() {
 	const [top, setTop] = useState<boolean>(true);
 	const links: LinksHeader[] = [
-		{ title: "Inicio", href: "/" },
-		{ title: "Quienes somos", href: "/about" },
-		{ title: "Servicios", href: "/services" },
-		{ title: "FAQ", href: "/faq" },
+		{ title: "Inicio", href: "hero" },
+		{ title: "Quienes somos", href: "about" },
+		{ title: "Servicios", href: "services" },
+		{ title: "FAQ", href: "faq" },
 	];
 
 	const scrollHandler = () => {
@@ -39,15 +39,20 @@ export default function Header() {
 					<div className="shrink-0 mr-4">
 						<Logo />
 					</div>
-					<nav className="hidden md:flex md:grow">
+					<nav id="nav" className="hidden md:flex md:grow">
 						<ul className="flex grow justify-end flex-wrap items-center">
 							{links.map((e, i) => (
 								<li key={i}>
-									<Link
-										href={e.href}
-										className="relative mx-5 font-medium text-neutral-900 dark:text-neutral-100 before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-neutral-900 dark:before:bg-neutral-100 before:transition hover:before:scale-100">
+									<ScrollLink
+										activeClass="active"
+										to={e.href}
+										spy={true}
+										smooth={true}
+										offset={-70} // Ajusta el desplazamiento vertical
+										duration={700}
+										className="relative cursor-pointer mx-5 font-medium text-neutral-900 dark:text-neutral-100 before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-neutral-900 dark:before:bg-neutral-100 before:transition hover:before:scale-100">
 										{e.title}
-									</Link>
+									</ScrollLink>
 								</li>
 							))}
 							<li>
