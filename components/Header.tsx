@@ -14,11 +14,11 @@ export default function Header() {
 	const [top, setTop] = useState<boolean>(true);
 	const links: LinksHeader[] = [
 		{ title: "Inicio", href: "/" },
-		{ title: "Servicios", href: "/services" },
 		{ title: "Quienes somos", href: "/about" },
+		{ title: "Servicios", href: "/services" },
 		{ title: "FAQ", href: "/faq" },
 	];
-	// detect whether user has scrolled the page down by 10px
+
 	const scrollHandler = () => {
 		window.pageYOffset > 10 ? setTop(false) : setTop(true);
 	};
@@ -45,7 +45,7 @@ export default function Header() {
 								<li key={i}>
 									<Link
 										href={e.href}
-										className="relative mx-5 font-medium text-neutral-900 dark:text-neutral-100 before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-neutral-100 before:transition hover:before:scale-100">
+										className="relative mx-5 font-medium text-neutral-900 dark:text-neutral-100 before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-neutral-900 dark:before:bg-neutral-100 before:transition hover:before:scale-100">
 										{e.title}
 									</Link>
 								</li>
@@ -53,7 +53,7 @@ export default function Header() {
 							<li>
 								<Link
 									href="/contact"
-									className="inline-block rounded border border-neutral-900 dark:border-neutral-100 bg-neutral-900 dark:bg-neutral-100 ms-3 px-5 py-2 text-sm font-medium text-neutral-200 dark:text-neutral-900 hover:bg-transparent hover:text-neutral-900 dark:hover:bg-transparent dark:hover:text-neutral-100 focus:outline-none focus:ring active:text-neutral-50 transition duration-300">
+									className="inline-block rounded border border-neutral-900 dark:border-neutral-100 bg-neutral-900 dark:bg-neutral-100 ms-3 px-5 py-2 text-sm font-medium text-neutral-200 dark:text-neutral-900 hover:bg-neutral-100 hover:text-neutral-900 dark:hover:bg-neutral-900 dark:hover:text-neutral-100 focus:outline-none focus:ring active:text-neutral-50 transition duration-300">
 									Contacto
 								</Link>
 							</li>

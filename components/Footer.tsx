@@ -2,24 +2,24 @@ import React from "react";
 
 function Footer() {
 	return (
-		<footer className="bg-white dark:bg-gray-900">
+		<footer className="bg-white dark:bg-neutral-900">
 			<div className="mx-auto max-w-screen-xl px-4 pb-8 ">
-				<div className="mt-16 border-t border-gray-100 pt-8 dark:border-gray-800 sm:flex sm:items-center sm:justify-between lg:mt-24">
+				<div className="mt-16 border-t border-neutral-100 pt-8 dark:border-neutral-800 sm:flex sm:items-center sm:justify-between lg:mt-24">
 					<ul className="flex flex-wrap justify-center gap-4 text-xs lg:justify-end">
 						<li>
-							<a href="#" className="text-gray-500 transition hover:opacity-75 dark:text-gray-400">
+							<a href="#" className="text-neutral-500 transition hover:opacity-75 dark:text-neutral-400">
 								Terms & Conditions
 							</a>
 						</li>
 
 						<li>
-							<a href="#" className="text-gray-500 transition hover:opacity-75 dark:text-gray-400">
+							<a href="#" className="text-neutral-500 transition hover:opacity-75 dark:text-neutral-400">
 								Privacy Policy
 							</a>
 						</li>
 
 						<li>
-							<a href="#" className="text-gray-500 transition hover:opacity-75 dark:text-gray-400">
+							<a href="#" className="text-neutral-500 transition hover:opacity-75 dark:text-neutral-400">
 								Cookies
 							</a>
 						</li>
@@ -27,7 +27,7 @@ function Footer() {
 
 					<ul className="mt-8 flex justify-center gap-6 sm:mt-0 lg:justify-end">
 						<li>
-							<a href="/" rel="noreferrer" target="_blank" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+							<a href="/" rel="noreferrer" target="_blank" className="text-neutral-700 transition hover:opacity-75 dark:text-neutral-200">
 								<span className="sr-only">Facebook</span>
 
 								<svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -41,7 +41,7 @@ function Footer() {
 						</li>
 
 						<li>
-							<a href="/" rel="noreferrer" target="_blank" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+							<a href="/" rel="noreferrer" target="_blank" className="text-neutral-700 transition hover:opacity-75 dark:text-neutral-200">
 								<span className="sr-only">Instagram</span>
 
 								<svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -55,7 +55,7 @@ function Footer() {
 						</li>
 
 						<li>
-							<a href="/" rel="noreferrer" target="_blank" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+							<a href="/" rel="noreferrer" target="_blank" className="text-neutral-700 transition hover:opacity-75 dark:text-neutral-200">
 								<span className="sr-only">Twitter</span>
 
 								<svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">

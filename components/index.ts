@@ -1,3 +1,5 @@
+export { default as About } from "./About";
+export { default as Acordeon } from "./Acordeon";
 export { default as Error404 } from "./Error404";
 export { default as Faq } from "./Faq";
 export { default as Footer } from "./Footer";

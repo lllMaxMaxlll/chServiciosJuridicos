@@ -3,12 +3,25 @@
 import { useState, useRef, useEffect } from "react";
 import { Transition } from "@headlessui/react";
 import Link from "next/link";
+import { Switcher } from "@/components";
+
+type LinksMobileMenu = {
+	title: string;
+	href: string;
+};
 
 export default function MobileMenu() {
 	const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false);
 
 	const trigger = useRef<HTMLButtonElement>(null);
 	const mobileNav = useRef<HTMLDivElement>(null);
+
+	const links: LinksMobileMenu[] = [
+		{ title: "Inicio", href: "/" },
+		{ title: "Quienes somos", href: "/about" },
+		{ title: "Servicios", href: "/services" },
+		{ title: "FAQ", href: "/faq" },
+	];
 
 	// close the mobile menu on click outside
 	useEffect(() => {
@@ -33,7 +46,7 @@ export default function MobileMenu() {
 
 	return (
 		<div className="flex md:hidden">
-			{/* Hamburger button */}
+			<Switcher />
 			<button
 				ref={trigger}
 				className={`hamburger ${mobileNavOpen && "active"}`}
@@ -41,53 +54,36 @@ export default function MobileMenu() {
 				aria-expanded={mobileNavOpen}
 				onClick={() => setMobileNavOpen(!mobileNavOpen)}>
 				<span className="sr-only">Menu</span>
-				<svg className="w-6 h-6 fill-current text-neutral-200" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+				<svg className="w-6 h-6 fill-current text-neutral-900 dark:text-neutral-200" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 					<rect y="4" width="24" height="2" />
 					<rect y="11" width="24" height="2" />
 					<rect y="18" width="24" height="2" />
 				</svg>
 			</button>
 
-			{/*Mobile navigation */}
 			<div ref={mobileNav}>
 				<Transition
 					show={mobileNavOpen}
 					as="nav"
 					id="mobile-nav"
-					className="absolute top-full h-screen pb-16 z-20 left-0 w-full overflow-scroll bg-white"
+					className="absolute top-full h-screen pb-16 z-20 left-0 w-full overflow-hidden bg-neutral-100 dark:bg-neutral-900"
 					enter="transition ease-out duration-200 transform"
 					enterFrom="opacity-0 -translate-y-2"
 					enterTo="opacity-100 translate-y-0"
 					leave="transition ease-out duration-200"
 					leaveFrom="opacity-100"
-					leaveTo="opacity-0">
-					<ul className="px-5 py-2">
-						<li>
-							<Link
-								href="/signin"
-								className="flex font-medium w-full text-gray-600 hover:text-gray-900 py-2 justify-center"
-								onClick={() => setMobileNavOpen(false)}>
-								Sign in
-							</Link>
-						</li>
-						<li>
-							<Link
-								href="/signup"
-								className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 w-full my-2"
-								onClick={() => setMobileNavOpen(false)}>
-								<span>Sign up</span>
-								<svg
-									className="w-3 h-3 fill-current text-gray-400 shrink-0 ml-2 -mr-1"
-									viewBox="0 0 12 12"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M11.707 5.293L7 .586 5.586 2l3 3H0v2h8.586l-3 3L7 11.414l4.707-4.707a1 1 0 000-1.414z"
-										fill="#999"
-										fillRule="nonzero"
-									/>
-								</svg>
-							</Link>
-						</li>
+					leaveTo="opacity-0 translate-y-0">
+					<ul className="px-5 py-2 flex justify-center items-center h-full flex-col">
+						{links.map((e, i) => (
+							<li key={i} className="py-3 text-2xl">
+								<Link
+									href={e.href}
+									onClick={() => setMobileNavOpen(false)}
+									className="flex font-medium w-full text-neutral-900 hover:text-neutral-600 dark:text-neutral-100 dark:hover:text-neutral-200 justify-center">
+									{e.title}
+								</Link>
+							</li>
+						))}
 					</ul>
 				</Transition>
 			</div>
