@@ -53,12 +53,36 @@ export default function MobileMenu() {
 				aria-controls="mobile-nav"
 				aria-expanded={mobileNavOpen}
 				onClick={() => setMobileNavOpen(!mobileNavOpen)}>
-				<span className="sr-only">Menu</span>
-				<svg className="w-6 h-6 fill-current text-neutral-900 dark:text-neutral-200" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-					<rect y="4" width="24" height="2" />
-					<rect y="11" width="24" height="2" />
-					<rect y="18" width="24" height="2" />
-				</svg>
+				{!mobileNavOpen ? (
+					<svg
+						className="fill-current stroke-neutral-900 dark:stroke-neutral-200"
+						xmlns="http://www.w3.org/2000/svg"
+						width="28"
+						height="28"
+						viewBox="0 0 24 24"
+						fill="none"
+						strokeWidth="2"
+						strokeLinecap="round"
+						strokeLinejoin="round">
+						<line x1="3" y1="12" x2="21" y2="12"></line>
+						<line x1="3" y1="6" x2="21" y2="6"></line>
+						<line x1="3" y1="18" x2="21" y2="18"></line>
+					</svg>
+				) : (
+					<svg
+						className="fill-current stroke-neutral-900 dark:stroke-neutral-200"
+						xmlns="http://www.w3.org/2000/svg"
+						width="28"
+						height="28"
+						viewBox="0 0 24 24"
+						fill="none"
+						strokeWidth="2"
+						strokeLinecap="round"
+						strokeLinejoin="round">
+						<line x1="18" y1="6" x2="6" y2="18"></line>
+						<line x1="6" y1="6" x2="18" y2="18"></line>
+					</svg>
+				)}
 			</button>
 
 			<div ref={mobileNav}>
@@ -66,7 +90,7 @@ export default function MobileMenu() {
 					show={mobileNavOpen}
 					as="nav"
 					id="mobile-nav"
-					className="absolute top-full h-screen pb-16 z-20 left-0 w-full overflow-hidden bg-neutral-100 dark:bg-neutral-900"
+					className="absolute top-full h-screen pb-16 z-20 left-0 w-screen overflow-hidden bg-neutral-100 dark:bg-neutral-900"
 					enter="transition ease-out duration-200 transform"
 					enterFrom="opacity-0 -translate-y-2"
 					enterTo="opacity-100 translate-y-0"
