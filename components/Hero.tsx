@@ -8,7 +8,7 @@ function Hero() {
 				className="absolute inset-0 bg-neutral-100/50 sm:from-neutral-100/95
        dark:bg-neutral-900/50  dark:sm:from-neutral-900/75  sm:bg-gradient-to-r"></div>
 
-			<div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8 text-neutral-900 dark:text-neutral-100">
+			<div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 flex h-screen justify-center sm:justify-start items-center lg:px-8 text-neutral-900 dark:text-neutral-100">
 				<div className="max-w-xl text-center sm:text-start">
 					<h1 className="text-3xl font-extrabold sm:text-5xl">Soluciones para tus para tus problemas legales.</h1>
 

@@ -48,7 +48,6 @@ export default function MobileMenu() {
 
 	return (
 		<div className="flex md:hidden">
-			<Switcher />
 			<button
 				ref={trigger}
 				className={`hamburger ${mobileNavOpen && "active"}`}
@@ -91,6 +90,8 @@ export default function MobileMenu() {
 								</ScrollLink>
 							</li>
 						))}
+
+						<Switcher />
 					</ul>
 				</Transition>
 			</div>
