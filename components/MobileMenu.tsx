@@ -5,6 +5,7 @@ import { Transition } from "@headlessui/react";
 import { Link as ScrollLink } from "react-scroll";
 import Link from "next/link";
 import { Switcher } from "@/components";
+import WhatsappIcon from "@/public/Icons/WhatsappIcon";
 
 type LinksMobileMenu = {
 	title: string;
@@ -47,6 +48,11 @@ export default function MobileMenu() {
 
 	return (
 		<div className="flex md:hidden">
+			<Link
+				href="https://wa.me/5492984895264?text=Buen%20dia.%20Quiero%20consultar%20sobre%20"
+				className="fill-current mx-5 hover:fill-green-500">
+				<WhatsappIcon size={28} />
+			</Link>
 			<button
 				ref={trigger}
 				className={`hamburger ${mobileNavOpen && "active"}`}

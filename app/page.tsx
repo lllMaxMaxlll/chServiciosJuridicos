@@ -1,4 +1,4 @@
-import { Hero, Faq, Footer, Popup, About, Services } from "@/components";
+import { Hero, Faq, Footer, Popup, About, Services, Whatsapp } from "@/components";
 
 export default function Home() {
 	return (
@@ -8,6 +8,7 @@ export default function Home() {
 			<Services />
 			<Faq />
 			<Footer />
+			<Whatsapp />
 		</>
 	);
 }

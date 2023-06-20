@@ -10,3 +10,4 @@ export { default as MobileMenu } from "./MobileMenu";
 export { default as Popup } from "./Popup";
 export { default as Services } from "./Services";
 export { default as Switcher } from "./Switcher";
+export { default as Whatsapp } from "./Whatsapp";
