@@ -10,7 +10,7 @@ function Hero() {
 
 			<div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 flex h-screen justify-center sm:justify-start items-center lg:px-8 text-neutral-900 dark:text-neutral-100">
 				<div className="max-w-xl text-center sm:text-start">
-					<h1 className="text-3xl font-extrabold sm:text-5xl">Soluciones para tus para tus problemas legales.</h1>
+					<h1 className="text-3xl font-extrabold sm:text-5xl">Soluciones para tus problemas legales.</h1>
 
 					<p className="mt-4 max-w-lg sm:text-xl/relaxed text-neutral-600 dark:text-neutral-300">
 						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo tenetur fuga ducimus numquam ea!
