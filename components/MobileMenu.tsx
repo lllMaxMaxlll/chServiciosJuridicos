@@ -22,7 +22,6 @@ export default function MobileMenu() {
 		{ title: "Quienes somos", href: "about" },
 		{ title: "Servicios", href: "services" },
 		{ title: "FAQ", href: "faq" },
-		{ title: "Contacto", href: "/contact" },
 	];
 
 	// close the mobile menu on click outside
@@ -82,14 +81,19 @@ export default function MobileMenu() {
 									to={e.href}
 									spy={true}
 									smooth={true}
-									offset={-70} // Ajusta el desplazamiento vertical
+									offset={-50}
 									duration={700}
 									onClick={() => setMobileNavOpen(false)}
-									className="flex cursor-pointer font-medium w-full text-neutral-900 hover:text-neutral-600 dark:text-neutral-100 dark:hover:text-neutral-200 justify-center">
+									className="flex cursor-pointer font-medium w-full text-neutral-900 hover:text-neutral-600 dark:text-neutral-100 dark:hover:text-neutral-400 justify-center">
 									{e.title}
 								</ScrollLink>
 							</li>
 						))}
+						<li className="py-3 text-2xl flex cursor-pointer font-medium w-full text-neutral-900 hover:text-neutral-600 dark:text-neutral-100 dark:hover:text-neutral-200 justify-center">
+							<Link href="/contact" onClick={() => setMobileNavOpen(false)}>
+								Contacto
+							</Link>
+						</li>
 
 						<Switcher />
 					</ul>
