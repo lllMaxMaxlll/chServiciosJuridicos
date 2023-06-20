@@ -5,7 +5,7 @@ function Services() {
 				<div className="max-w-xl">
 					<h2 className="text-3xl font-bold sm:text-4xl">Nuestros servicios</h2>
 
-					<p className="mt-4 text-gray-300">
+					<p className="mt-4 text-neutral-900 dark:text-neutral-200">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolores iure fugit totam iste obcaecati. Consequatur ipsa quod
 						ipsum sequi culpa delectus, cumque id tenetur quibusdam, quos fuga minima.
 					</p>
@@ -13,22 +13,35 @@ function Services() {
 
 				<div className="mt-8 grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
 					<div className="flex items-start gap-4">
-						<span className="shrink-0 rounded-lg bg-gray-800 p-4">
-							<svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-								<path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-								<path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
-								<path
-									strokeLinecap="round"
-									strokeLinejoin="round"
-									strokeWidth="2"
-									d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path>
+						<span className="shrink-0 rounded-lg p-4">
+							<svg
+								className="h-5 w-5 fill-neutral-900 dark:fill-neutral-200"
+								width="24"
+								height="24"
+								viewBox="0 0 48 48"
+								xmlns="http://www.w3.org/2000/svg">
+								<g id="Layer_2" data-name="Layer 2">
+									<g id="invisible_box" data-name="invisible box">
+										<rect width="48" height="48" fill="none" />
+									</g>
+									<g id="Q3_icons" data-name="Q3 icons">
+										<g>
+											<rect x="5" y="36" width="38" height="4" />
+											<path d="M44,42H4a2,2,0,0,0-2,2v2H46V44A2,2,0,0,0,44,42Z" />
+											<rect x="10" y="18" width="4" height="16" />
+											<rect x="22" y="18" width="4" height="16" />
+											<rect x="34" y="18" width="4" height="16" />
+											<path d="M44.9,11.4,24,2,3.1,11.4A2.1,2.1,0,0,0,2,13.2V14a2,2,0,0,0,2,2H44a2,2,0,0,0,2-2v-.8A2.1,2.1,0,0,0,44.9,11.4ZM11.6,12,24,6.4,36.4,12Z" />
+										</g>
+									</g>
+								</g>
 							</svg>
 						</span>
 
 						<div>
-							<h2 className="text-lg font-bold">Lorem, ipsum dolor.</h2>
+							<h2 className="text-lg font-bold">Servicio 1</h2>
 
-							<p className="mt-1 text-sm text-gray-300">
+							<p className="mt-1  text-neutral-900 dark:text-neutral-200">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cumque tempore est ab possimus quisquam reiciendis tempora
 								animi! Quaerat, saepe?
 							</p>
@@ -36,22 +49,35 @@ function Services() {
 					</div>
 
 					<div className="flex items-start gap-4">
-						<span className="shrink-0 rounded-lg bg-gray-800 p-4">
-							<svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-								<path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-								<path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
-								<path
-									strokeLinecap="round"
-									strokeLinejoin="round"
-									strokeWidth="2"
-									d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path>
+						<span className="shrink-0 rounded-lg p-4">
+							<svg
+								className="h-5 w-5 fill-neutral-900 dark:fill-neutral-200"
+								width="24"
+								height="24"
+								viewBox="0 0 48 48"
+								xmlns="http://www.w3.org/2000/svg">
+								<g id="Layer_2" data-name="Layer 2">
+									<g id="invisible_box" data-name="invisible box">
+										<rect width="48" height="48" fill="none" />
+									</g>
+									<g id="Q3_icons" data-name="Q3 icons">
+										<g>
+											<rect x="5" y="36" width="38" height="4" />
+											<path d="M44,42H4a2,2,0,0,0-2,2v2H46V44A2,2,0,0,0,44,42Z" />
+											<rect x="10" y="18" width="4" height="16" />
+											<rect x="22" y="18" width="4" height="16" />
+											<rect x="34" y="18" width="4" height="16" />
+											<path d="M44.9,11.4,24,2,3.1,11.4A2.1,2.1,0,0,0,2,13.2V14a2,2,0,0,0,2,2H44a2,2,0,0,0,2-2v-.8A2.1,2.1,0,0,0,44.9,11.4ZM11.6,12,24,6.4,36.4,12Z" />
+										</g>
+									</g>
+								</g>
 							</svg>
 						</span>
 
 						<div>
-							<h2 className="text-lg font-bold">Lorem, ipsum dolor.</h2>
+							<h2 className="text-lg font-bold">Servicio 2</h2>
 
-							<p className="mt-1 text-sm text-gray-300">
+							<p className="mt-1  text-neutral-900 dark:text-neutral-200">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cumque tempore est ab possimus quisquam reiciendis tempora
 								animi! Quaerat, saepe?
 							</p>
@@ -59,22 +85,35 @@ function Services() {
 					</div>
 
 					<div className="flex items-start gap-4">
-						<span className="shrink-0 rounded-lg bg-gray-800 p-4">
-							<svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-								<path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-								<path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
-								<path
-									strokeLinecap="round"
-									strokeLinejoin="round"
-									strokeWidth="2"
-									d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path>
+						<span className="shrink-0 rounded-lg p-4">
+							<svg
+								className="h-5 w-5 fill-neutral-900 dark:fill-neutral-200"
+								width="24"
+								height="24"
+								viewBox="0 0 48 48"
+								xmlns="http://www.w3.org/2000/svg">
+								<g id="Layer_2" data-name="Layer 2">
+									<g id="invisible_box" data-name="invisible box">
+										<rect width="48" height="48" fill="none" />
+									</g>
+									<g id="Q3_icons" data-name="Q3 icons">
+										<g>
+											<rect x="5" y="36" width="38" height="4" />
+											<path d="M44,42H4a2,2,0,0,0-2,2v2H46V44A2,2,0,0,0,44,42Z" />
+											<rect x="10" y="18" width="4" height="16" />
+											<rect x="22" y="18" width="4" height="16" />
+											<rect x="34" y="18" width="4" height="16" />
+											<path d="M44.9,11.4,24,2,3.1,11.4A2.1,2.1,0,0,0,2,13.2V14a2,2,0,0,0,2,2H44a2,2,0,0,0,2-2v-.8A2.1,2.1,0,0,0,44.9,11.4ZM11.6,12,24,6.4,36.4,12Z" />
+										</g>
+									</g>
+								</g>
 							</svg>
 						</span>
 
 						<div>
-							<h2 className="text-lg font-bold">Lorem, ipsum dolor.</h2>
+							<h2 className="text-lg font-bold">Servicio 3</h2>
 
-							<p className="mt-1 text-sm text-gray-300">
+							<p className="mt-1  text-neutral-900 dark:text-neutral-200">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cumque tempore est ab possimus quisquam reiciendis tempora
 								animi! Quaerat, saepe?
 							</p>
@@ -82,22 +121,35 @@ function Services() {
 					</div>
 
 					<div className="flex items-start gap-4">
-						<span className="shrink-0 rounded-lg bg-gray-800 p-4">
-							<svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-								<path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-								<path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
-								<path
-									strokeLinecap="round"
-									strokeLinejoin="round"
-									strokeWidth="2"
-									d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path>
+						<span className="shrink-0 rounded-lg p-4">
+							<svg
+								className="h-5 w-5 fill-neutral-900 dark:fill-neutral-200"
+								width="24"
+								height="24"
+								viewBox="0 0 48 48"
+								xmlns="http://www.w3.org/2000/svg">
+								<g id="Layer_2" data-name="Layer 2">
+									<g id="invisible_box" data-name="invisible box">
+										<rect width="48" height="48" fill="none" />
+									</g>
+									<g id="Q3_icons" data-name="Q3 icons">
+										<g>
+											<rect x="5" y="36" width="38" height="4" />
+											<path d="M44,42H4a2,2,0,0,0-2,2v2H46V44A2,2,0,0,0,44,42Z" />
+											<rect x="10" y="18" width="4" height="16" />
+											<rect x="22" y="18" width="4" height="16" />
+											<rect x="34" y="18" width="4" height="16" />
+											<path d="M44.9,11.4,24,2,3.1,11.4A2.1,2.1,0,0,0,2,13.2V14a2,2,0,0,0,2,2H44a2,2,0,0,0,2-2v-.8A2.1,2.1,0,0,0,44.9,11.4ZM11.6,12,24,6.4,36.4,12Z" />
+										</g>
+									</g>
+								</g>
 							</svg>
 						</span>
 
 						<div>
-							<h2 className="text-lg font-bold">Lorem, ipsum dolor.</h2>
+							<h2 className="text-lg font-bold">Servicio 4</h2>
 
-							<p className="mt-1 text-sm text-gray-300">
+							<p className="mt-1  text-neutral-900 dark:text-neutral-200">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cumque tempore est ab possimus quisquam reiciendis tempora
 								animi! Quaerat, saepe?
 							</p>
@@ -105,22 +157,35 @@ function Services() {
 					</div>
 
 					<div className="flex items-start gap-4">
-						<span className="shrink-0 rounded-lg bg-gray-800 p-4">
-							<svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-								<path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-								<path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
-								<path
-									strokeLinecap="round"
-									strokeLinejoin="round"
-									strokeWidth="2"
-									d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path>
+						<span className="shrink-0 rounded-lg p-4">
+							<svg
+								className="h-5 w-5 fill-neutral-900 dark:fill-neutral-200"
+								width="24"
+								height="24"
+								viewBox="0 0 48 48"
+								xmlns="http://www.w3.org/2000/svg">
+								<g id="Layer_2" data-name="Layer 2">
+									<g id="invisible_box" data-name="invisible box">
+										<rect width="48" height="48" fill="none" />
+									</g>
+									<g id="Q3_icons" data-name="Q3 icons">
+										<g>
+											<rect x="5" y="36" width="38" height="4" />
+											<path d="M44,42H4a2,2,0,0,0-2,2v2H46V44A2,2,0,0,0,44,42Z" />
+											<rect x="10" y="18" width="4" height="16" />
+											<rect x="22" y="18" width="4" height="16" />
+											<rect x="34" y="18" width="4" height="16" />
+											<path d="M44.9,11.4,24,2,3.1,11.4A2.1,2.1,0,0,0,2,13.2V14a2,2,0,0,0,2,2H44a2,2,0,0,0,2-2v-.8A2.1,2.1,0,0,0,44.9,11.4ZM11.6,12,24,6.4,36.4,12Z" />
+										</g>
+									</g>
+								</g>
 							</svg>
 						</span>
 
 						<div>
-							<h2 className="text-lg font-bold">Lorem, ipsum dolor.</h2>
+							<h2 className="text-lg font-bold">Servicio 5</h2>
 
-							<p className="mt-1 text-sm text-gray-300">
+							<p className="mt-1  text-neutral-900 dark:text-neutral-200">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cumque tempore est ab possimus quisquam reiciendis tempora
 								animi! Quaerat, saepe?
 							</p>
@@ -128,22 +193,35 @@ function Services() {
 					</div>
 
 					<div className="flex items-start gap-4">
-						<span className="shrink-0 rounded-lg bg-gray-800 p-4">
-							<svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-								<path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-								<path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
-								<path
-									strokeLinecap="round"
-									strokeLinejoin="round"
-									strokeWidth="2"
-									d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path>
+						<span className="shrink-0 rounded-lg p-4">
+							<svg
+								className="h-5 w-5 fill-neutral-900 dark:fill-neutral-200"
+								width="24"
+								height="24"
+								viewBox="0 0 48 48"
+								xmlns="http://www.w3.org/2000/svg">
+								<g id="Layer_2" data-name="Layer 2">
+									<g id="invisible_box" data-name="invisible box">
+										<rect width="48" height="48" fill="none" />
+									</g>
+									<g id="Q3_icons" data-name="Q3 icons">
+										<g>
+											<rect x="5" y="36" width="38" height="4" />
+											<path d="M44,42H4a2,2,0,0,0-2,2v2H46V44A2,2,0,0,0,44,42Z" />
+											<rect x="10" y="18" width="4" height="16" />
+											<rect x="22" y="18" width="4" height="16" />
+											<rect x="34" y="18" width="4" height="16" />
+											<path d="M44.9,11.4,24,2,3.1,11.4A2.1,2.1,0,0,0,2,13.2V14a2,2,0,0,0,2,2H44a2,2,0,0,0,2-2v-.8A2.1,2.1,0,0,0,44.9,11.4ZM11.6,12,24,6.4,36.4,12Z" />
+										</g>
+									</g>
+								</g>
 							</svg>
 						</span>
 
 						<div>
-							<h2 className="text-lg font-bold">Lorem, ipsum dolor.</h2>
+							<h2 className="text-lg font-bold">Servicio 6</h2>
 
-							<p className="mt-1 text-sm text-gray-300">
+							<p className="mt-1  text-neutral-900 dark:text-neutral-200">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cumque tempore est ab possimus quisquam reiciendis tempora
 								animi! Quaerat, saepe?
 							</p>
