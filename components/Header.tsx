@@ -36,10 +36,10 @@ export default function Header() {
 			}`}>
 			<div className="max-w-6xl mx-auto px-5 sm:px-6">
 				<div className="flex items-center justify-between h-16 md:h-20">
-					<div className="shrink-0 mr-4" data-aos="fade-zoom-in">
+					<div className="shrink-0 mr-4">
 						<Logo />
 					</div>
-					<nav id="nav" className="hidden md:flex md:grow" data-aos="fade-zoom-in">
+					<nav id="nav" className="hidden md:flex md:grow">
 						<ul className="flex grow justify-end flex-wrap items-center">
 							{links.map((e, i) => (
 								<li key={i}>

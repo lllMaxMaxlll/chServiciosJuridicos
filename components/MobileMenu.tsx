@@ -49,7 +49,7 @@ export default function MobileMenu() {
 	return (
 		<div className="flex md:hidden">
 			{/* Phone Button */}
-			<a href="tel:+542994561234" data-aos="fade-zoom-in">
+			<a href="tel:+542994561234">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="28"
@@ -65,13 +65,10 @@ export default function MobileMenu() {
 			</a>
 
 			{/* Whatsapp Button */}
-			<Link
-				href="https://wa.me/5492984895264?text=Buen%20dia.%20Quiero%20consultar%20sobre%20"
-				className="fill-current mx-5"
-				data-aos="fade-zoom-in">
+			<Link href="https://wa.me/5492984895264?text=Buen%20dia.%20Quiero%20consultar%20sobre%20" className="fill-current mx-5">
 				<WhatsappIcon size={28} />
 			</Link>
-
+			{/* Burquer or Close */}
 			<button
 				ref={trigger}
 				className={`hamburger ${mobileNavOpen && "active"}`}
@@ -80,7 +77,6 @@ export default function MobileMenu() {
 				onClick={() => setMobileNavOpen(!mobileNavOpen)}>
 				{!mobileNavOpen ? (
 					<svg
-						data-aos="fade-zoom-in"
 						className="fill-current stroke-neutral-900 dark:stroke-neutral-100"
 						xmlns="http://www.w3.org/2000/svg"
 						width="28"
