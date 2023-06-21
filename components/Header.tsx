@@ -31,7 +31,7 @@ export default function Header() {
 
 	return (
 		<header
-			className={`fixed w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out ${
+			className={`fixed w-screen z-30 md:bg-opacity-90 transition duration-300 ease-in-out ${
 				!top ? "bg-neutral-100 dark:bg-neutral-900 backdrop-blur-sm shadow-lg" : ""
 			}`}>
 			<div className="max-w-6xl mx-auto px-5 sm:px-6">
