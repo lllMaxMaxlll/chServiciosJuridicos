@@ -32,12 +32,16 @@ function Acordeon() {
 	return (
 		<>
 			{faqs.map((faq, i) => (
-				<details key={i} className="group [&_summary::-webkit-details-marker]:hidden" data-aos="fade-left" data-aos-delay="100">
-					<summary className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-neutral-200 p-4 text-neutral-900 dark:bg-neutral-800 dark:text-white">
+				<details key={i} className="group [&_summary::-webkit-details-marker]:hidden">
+					<summary
+						data-aos="fade-down"
+						data-aos-delay="100"
+						className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-neutral-200 p-4 text-neutral-900 dark:bg-neutral-800 dark:text-white">
 						<h2 className="font-medium">{faq.title}</h2>
 
 						<svg
 							className="h-5 w-5 shrink-0 transition duration-300 group-open:-rotate-180"
+							data-aos="fade-down"
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
 							viewBox="0 0 24 24"
