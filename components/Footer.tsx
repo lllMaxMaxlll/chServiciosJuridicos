@@ -1,8 +1,8 @@
 function Footer() {
 	return (
-		<footer className="bg-white dark:bg-neutral-900">
+		<footer>
 			<div className="mx-auto max-w-screen-xl px-4 pb-8 ">
-				<div className="mt-16 border-t border-neutral-100 pt-8 dark:border-neutral-800 sm:flex sm:items-center sm:justify-around lg:mt-24">
+				<div className="mt-6 border-t border-neutral-100 pt-8 dark:border-neutral-800 sm:flex sm:items-center sm:justify-around">
 					<ul className="flex flex-col flex-wrap justify-center text-center sm:text-start gap-4 text-xs lg:justify-end">
 						<li>
 							<a href="#" className="text-neutral-900 transition hover:opacity-75 dark:text-neutral-400">
@@ -25,7 +25,11 @@ function Footer() {
 
 					<ul className="py-4 flex justify-center gap-6 sm:mt-0 lg:justify-end">
 						<li>
-							<a href="/" rel="noreferrer" target="_blank" className="text-neutral-900 transition hover:opacity-75 dark:text-neutral-200">
+							<a
+								href="/"
+								rel="noreferrer"
+								target="_blank"
+								className="text-neutral-900 transition hover:text-blue-500 dark:text-neutral-200">
 								<span className="sr-only">Facebook</span>
 
 								<svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -39,7 +43,11 @@ function Footer() {
 						</li>
 
 						<li>
-							<a href="/" rel="noreferrer" target="_blank" className="text-neutral-900 transition hover:opacity-75 dark:text-neutral-200">
+							<a
+								href="/"
+								rel="noreferrer"
+								target="_blank"
+								className="text-neutral-900 transition hover:text-rose-600 dark:text-neutral-200">
 								<span className="sr-only">Instagram</span>
 
 								<svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">

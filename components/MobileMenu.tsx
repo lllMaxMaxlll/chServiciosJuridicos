@@ -49,7 +49,7 @@ export default function MobileMenu() {
 	return (
 		<div className="flex md:hidden">
 			{/* Phone Button */}
-			<a href="tel:+542994561234">
+			{/* <Link href="tel:+542994561234">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="28"
@@ -62,7 +62,7 @@ export default function MobileMenu() {
 					strokeLinejoin="round">
 					<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
 				</svg>
-			</a>
+			</Link> */}
 
 			{/* Whatsapp Button */}
 			<Link href="https://wa.me/5492984895264?text=Buen%20dia.%20Quiero%20consultar%20sobre%20" className="fill-current mx-5">
@@ -71,7 +71,7 @@ export default function MobileMenu() {
 			{/* Burquer or Close */}
 			<button
 				ref={trigger}
-				className={`hamburger ${mobileNavOpen && "active"}`}
+				className={`hamburger ${mobileNavOpen && "active"} z-30`}
 				aria-controls="mobile-nav"
 				aria-expanded={mobileNavOpen}
 				onClick={() => setMobileNavOpen(!mobileNavOpen)}>
@@ -107,19 +107,19 @@ export default function MobileMenu() {
 				)}
 			</button>
 
-			<div ref={mobileNav}>
+			<div ref={mobileNav} className="absolute top-0 left-0 z-10 ">
 				<Transition
 					show={mobileNavOpen}
 					as="nav"
 					id="mobile-nav"
-					className="absolute top-full h-screen pb-16 z-20 left-0 w-screen overflow-hidden bg-neutral-100 dark:bg-neutral-900"
+					className="absolute top-0 h-screen pb-16 z-20 left-0 w-screen overflow-hidden bg-neutral-100 dark:bg-neutral-900"
 					enter="transition ease-out duration-200 transform"
 					enterFrom="opacity-0 -translate-y-2"
 					enterTo="opacity-100 translate-y-0"
 					leave="transition ease-out duration-200"
 					leaveFrom="opacity-100"
 					leaveTo="opacity-0 translate-y-0">
-					<ul className="px-5 py-2 flex justify-center items-center h-full flex-col">
+					<ul className="px-5 h-screen flex justify-center items-center flex-col">
 						{links.map((e, i) => (
 							<li key={i} className="py-3 text-2xl">
 								<ScrollLink
@@ -140,9 +140,10 @@ export default function MobileMenu() {
 								Contacto
 							</Link>
 						</li>
-
-						<Switcher />
 					</ul>
+					<div className="absolute z-20 top-3 left-3">
+						<Switcher />
+					</div>
 				</Transition>
 			</div>
 		</div>

@@ -3,11 +3,11 @@ function Services() {
 		<section id="services">
 			<div className="max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8 mx-auto">
 				<div className="max-w-xl">
-					<h2 className="text-3xl font-bold sm:text-4xl" data-aos="fade-down">
+					<h2 className="text-3xl font-bold sm:text-4xl" data-aos="fade-zoom-in">
 						Nuestros servicios
 					</h2>
 
-					<p className="mt-4 text-neutral-900 dark:text-neutral-200" data-aos="fade-down" data-aos-delay="200">
+					<p className="mt-4 text-neutral-900 dark:text-neutral-200" data-aos="fade-zoom-in" data-aos-delay="200">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolores iure fugit totam iste obcaecati. Consequatur ipsa quod
 						ipsum sequi culpa delectus, cumque id tenetur quibusdam, quos fuga minima.
 					</p>
@@ -15,7 +15,7 @@ function Services() {
 
 				<div
 					className="mt-8 grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3"
-					data-aos="fade-down"
+					data-aos="fade-zoom-in"
 					data-aos-delay="200">
 					<div className="flex items-start gap-4">
 						<span className="shrink-0 rounded-lg p-4">
