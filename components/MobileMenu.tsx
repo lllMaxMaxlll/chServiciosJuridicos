@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import { Transition } from "@headlessui/react";
 import { Link as ScrollLink } from "react-scroll";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Switcher } from "@/components";
 import WhatsappIcon from "@/public/Icons/WhatsappSVG";
 
@@ -14,6 +15,7 @@ type LinksMobileMenu = {
 
 export default function MobileMenu() {
 	const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false);
+	const pathname = usePathname();
 
 	const trigger = useRef<HTMLButtonElement>(null);
 	const mobileNav = useRef<HTMLDivElement>(null);
@@ -119,28 +121,41 @@ export default function MobileMenu() {
 					leave="transition ease-out duration-200"
 					leaveFrom="opacity-100"
 					leaveTo="opacity-0 translate-y-0">
-					<ul className="px-5 h-screen flex justify-center items-center flex-col">
-						{links.map((e, i) => (
-							<li key={i} className="py-3 text-2xl">
-								<ScrollLink
-									activeClass="active"
-									to={e.href}
-									spy={true}
-									smooth={true}
-									offset={-50}
-									duration={700}
-									onClick={() => setMobileNavOpen(false)}
-									className="flex cursor-pointer font-medium w-full text-neutral-900 hover:text-neutral-600 dark:text-neutral-100 dark:hover:text-neutral-400 justify-center">
-									{e.title}
-								</ScrollLink>
+					{pathname === "/" && (
+						<ul className="px-5 h-screen flex justify-center items-center flex-col">
+							{links.map((e, i) => (
+								<li key={i} className="py-3 text-2xl">
+									<ScrollLink
+										activeClass="active"
+										to={e.href}
+										spy={true}
+										smooth={true}
+										offset={-50}
+										duration={700}
+										onClick={() => setMobileNavOpen(false)}
+										className="flex cursor-pointer font-medium w-full text-neutral-900 hover:text-neutral-600 dark:text-neutral-100 dark:hover:text-neutral-400 justify-center">
+										{e.title}
+									</ScrollLink>
+								</li>
+							))}
+							<li className="py-3 text-2xl flex cursor-pointer font-medium w-full text-neutral-900 hover:text-neutral-600 dark:text-neutral-100 dark:hover:text-neutral-200 justify-center">
+								<Link href="/contact" onClick={() => setMobileNavOpen(false)}>
+									Contacto
+								</Link>
 							</li>
-						))}
-						<li className="py-3 text-2xl flex cursor-pointer font-medium w-full text-neutral-900 hover:text-neutral-600 dark:text-neutral-100 dark:hover:text-neutral-200 justify-center">
-							<Link href="/contact" onClick={() => setMobileNavOpen(false)}>
-								Contacto
-							</Link>
-						</li>
-					</ul>
+						</ul>
+					)}
+
+					{pathname !== "/" && (
+						<ul className="px-5 h-screen flex justify-center items-center flex-col">
+							<li className="py-3 text-2xl flex cursor-pointer font-medium w-full text-neutral-900 hover:text-neutral-600 dark:text-neutral-100 dark:hover:text-neutral-200 justify-center">
+								<Link href="/" onClick={() => setMobileNavOpen(false)}>
+									Volver a inicio
+								</Link>
+							</li>
+						</ul>
+					)}
+
 					<div className="absolute z-20 top-3 left-3">
 						<Switcher />
 					</div>
