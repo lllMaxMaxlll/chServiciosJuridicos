@@ -4,11 +4,8 @@ function About() {
 	return (
 		<section id="about">
 			<div className="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
-				<div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-					<div
-						className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full"
-						data-aos="fade-right"
-						data-aos-delay="200">
+				<div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-16">
+					<div className="relative h-48 overflow-hidden rounded-lg order-last md:h-full" data-aos="fade-right" data-aos-delay="200">
 						<Image src="/about.png" alt="about" width={700} height={500} className="absolute inset-0 h-full w-full object-cover" />
 					</div>
 

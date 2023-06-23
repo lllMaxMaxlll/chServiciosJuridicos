@@ -16,7 +16,7 @@ function Faq() {
 						<Acordeon />
 					</div>
 					<div
-						className="pt-5 h-48 overflow-hidden rounded-lg sm:block md:order-first md:h-full mx-auto"
+						className="pt-5 h-48 overflow-hidden rounded-lg sm:block order-first md:h-full mx-auto"
 						data-aos="fade-down"
 						data-aos-delay="300">
 						<Image src="/faq.jpg" alt="about" width={900} height={300} className="h-full object-cover rounded-lg" />
