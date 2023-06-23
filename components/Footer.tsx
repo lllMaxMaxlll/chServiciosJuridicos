@@ -2,34 +2,30 @@ function Footer() {
 	return (
 		<footer>
 			<div className="mx-auto max-w-screen-xl px-4 pb-8 ">
-				<div className="mt-6 border-t border-neutral-100 pt-8 dark:border-neutral-800 sm:flex sm:items-center sm:justify-around">
+				<div className="mt-6 border-t border-neutral-200 pt-8 dark:border-neutral-800 sm:flex sm:items-center sm:justify-around">
 					<ul className="flex flex-col flex-wrap justify-center text-center sm:text-start gap-4 text-xs lg:justify-end">
 						<li>
-							<a href="#" className="text-neutral-900 transition hover:opacity-75 dark:text-neutral-400">
+							<a href="tel:2994561234" className="transition hover:opacity-75">
 								Telefono: 299 - 4561234
 							</a>
 						</li>
 
 						<li>
-							<a href="#" className="text-neutral-900 transition hover:opacity-75 dark:text-neutral-400">
+							<a href="https://goo.gl/maps/QsTxVRgwmVWJKHA66" target="_blank" className="transition hover:opacity-75">
 								Direccion: Calle Falsa 123, Barrio Siempre Viva
 							</a>
 						</li>
 
 						<li>
-							<a href="#" className="text-neutral-900 transition hover:opacity-75 dark:text-neutral-400">
-								Email: email@estudio.com
+							<a href="mailto:ch.servicio.juridico@gmail.com" className=" transition hover:opacity-75">
+								Email: ch.servicio.juridico@gmail.com
 							</a>
 						</li>
 					</ul>
 
-					<ul className="py-4 flex justify-center gap-6 sm:mt-0 lg:justify-end">
+					<ul className="py-5 flex justify-center gap-6 sm:mt-0 lg:justify-end">
 						<li>
-							<a
-								href="/"
-								rel="noreferrer"
-								target="_blank"
-								className="text-neutral-900 transition hover:text-blue-500 dark:text-neutral-200">
+							<a href="/" rel="noreferrer" target="_blank" className=" transition hover:text-blue-500 dark:text-neutral-200">
 								<span className="sr-only">Facebook</span>
 
 								<svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -43,11 +39,7 @@ function Footer() {
 						</li>
 
 						<li>
-							<a
-								href="/"
-								rel="noreferrer"
-								target="_blank"
-								className="text-neutral-900 transition hover:text-rose-600 dark:text-neutral-200">
+							<a href="/" rel="noreferrer" target="_blank" className=" transition hover:text-rose-600 dark:text-neutral-200">
 								<span className="sr-only">Instagram</span>
 
 								<svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
