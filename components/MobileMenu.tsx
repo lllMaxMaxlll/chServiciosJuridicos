@@ -67,9 +67,10 @@ export default function MobileMenu() {
 			</Link> */}
 
 			{/* Whatsapp Button */}
-			<Link href="https://wa.me/5492984895264?text=Buen%20dia.%20Quiero%20consultar%20sobre%20" className="fill-current mx-5">
+			<a href="https://wa.me/5492995233552" className="fill-current mx-5">
 				<WhatsappIcon size={28} />
-			</Link>
+			</a>
+
 			{/* Burquer or Close */}
 			<button
 				ref={trigger}

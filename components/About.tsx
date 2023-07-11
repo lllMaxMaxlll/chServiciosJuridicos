@@ -13,8 +13,9 @@ function About() {
 						<p className="mt-4 text-neutral-600 dark:text-neutral-400">Creemos en la justicia</p>
 						<h2 className="text-3xl font-bold sm:text-4xl">Quienes somos</h2>
 						<p className="mt-4 text-neutral-600 dark:text-neutral-400">
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui hic atque tenetur quis eius quos ea neque sunt, accusantium
-							soluta minus veniam tempora deserunt? Molestiae eius quidem quam repellat.
+							Somos un equipo comprometido de abogados apasionados por brindar soluciones efectivas a tus problemas legales. Con una sólida
+							trayectoria y experiencia en diversas áreas del derecho, nos dedicamos a proteger tus derechos y defender tus intereses con
+							profesionalismo y ética
 						</p>
 					</div>
 				</div>

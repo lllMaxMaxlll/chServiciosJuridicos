@@ -73,7 +73,7 @@ function Contact(): JSX.Element {
 										href="https://goo.gl/maps/QsTxVRgwmVWJKHA66"
 										target="_blank"
 										className="ml-4 text-md font-semibold transition hover:opacity-75">
-										Calle falsa 123, Cipolletti, Rio Negro
+										Cipolletti, Río Negro, Argentina
 									</a>
 								</div>
 
@@ -93,8 +93,8 @@ function Contact(): JSX.Element {
 											d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
 										/>
 									</svg>
-									<a href="tel:2994561234" className="ml-4 text-md font-semibold transition hover:opacity-75">
-										+54 299 4561234
+									<a href="tel:+542995233552" className="ml-4 text-md font-semibold transition hover:opacity-75">
+										+54 299 5233552
 									</a>
 								</div>
 
@@ -130,7 +130,7 @@ function Contact(): JSX.Element {
 									type="text"
 									id="user_name"
 									name="user_name"
-									placeholder="Nombre completo"
+									placeholder="Nombre Apellido"
 									className="h-8 mt-1 w-full bg-transparent p-0 border rounded-md border-neutral-400 px-3 py-5 shadow-sm focus-within:border-neutral-600 focus-within:ring-1 focus-within:ring-neutral-700 sm:text-sm"
 								/>
 
@@ -143,7 +143,7 @@ function Contact(): JSX.Element {
 									type="email"
 									id="user_email"
 									name="user_email"
-									placeholder="john@rhcp.com"
+									placeholder="miemail@gmail.com"
 									className="h-8 mt-1 w-full bg-transparent p-0 border rounded-md border-neutral-400 px-3 py-5 shadow-sm focus-within:border-neutral-600 focus-within:ring-1 focus-within:ring-neutral-700 sm:text-sm"
 								/>
 
@@ -155,7 +155,7 @@ function Contact(): JSX.Element {
 									id="message"
 									name="message"
 									className="resize-none w-full rounded-md bg-transparent border border-neutral-400 p-3 my-1 text-sm"
-									placeholder="Describi tu consulta"
+									placeholder="Necesito solucionar un conflicto con..."
 									rows={8}></textarea>
 
 								<button

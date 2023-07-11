@@ -11,11 +11,11 @@ function Hero() {
 			<div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 flex h-screen justify-center sm:justify-start items-center lg:px-8 text-neutral-900 dark:text-neutral-100">
 				<div className="max-w-xl text-center sm:text-start">
 					<h1 className="text-3xl font-extrabold sm:text-5xl" data-aos="fade-up">
-						Soluciones para tus problemas legales.
+						Soluciones para tus conflictos legales.
 					</h1>
 
 					<p className="mt-4 max-w-lg sm:text-xl/relaxed text-neutral-600 dark:text-neutral-300" data-aos="fade-up" data-aos-delay="200">
-						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo tenetur fuga ducimus numquam ea!
+						Comprometidos en proteger tus derechos y brindar resultados efectivos.
 					</p>
 
 					<div className="mt-8 flex flex-wrap text-center">
